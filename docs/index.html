@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
+  <title>Inspect SAML metadata | SAML Fixture Lab</title>
+  <meta name="description" content="List entity IDs, SSO and ACS endpoints, bindings, and certificate fingerprints from IdP or SP XML.">
+  <link rel="canonical" href="https://musabukhari237.github.io/saml-fixture-lab/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Inspect SAML metadata | SAML Fixture Lab">
+  <meta property="og:description" content="List entity IDs, SSO and ACS endpoints, bindings, and certificate fingerprints from IdP or SP XML.">
+  <meta property="og:url" content="https://musabukhari237.github.io/saml-fixture-lab/">
+  <meta property="og:image" content="https://musabukhari237.github.io/saml-fixture-lab/preview.png">
+  <meta property="og:image:alt" content="SAML Fixture Lab displaying a synthetic example result">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="app.css">
+  <script type="module" src="app.mjs"></script>
+</head>
+<body>
+<header><a href="./" class="brand"><img src="logo.svg" alt="">SAML Fixture Lab</a><a href="https://github.com/MusaBukhari237/saml-fixture-lab" class="small-link">GitHub repository</a></header>
+<main>
+<section class="lead"><h1>Inspect SAML metadata</h1><p>List entity IDs, SSO and ACS endpoints, bindings, and certificate fingerprints from IdP or SP XML.</p></section>
+<div class="workspace">
+  <section class="panel" aria-labelledby="settings"><h2 id="settings">SAML metadata</h2>
+    <div class="inputs"><label class="wide">IdP or SP metadata XML<textarea id="source" rows="14" maxlength="1000000" placeholder="&lt;EntityDescriptor …>" spellcheck="false"></textarea></label></div>
+    <div class="actions"><button type="button" id="run">Inspect metadata</button><button type="button" id="sample" class="quiet">Load sample IdP and SP</button></div>
+    <small>XML is parsed locally. Endpoint URLs are displayed as text and never contacted.</small>
+  </section>
+  <section class="panel" aria-labelledby="result-title"><h2 id="result-title">Metadata report</h2>
+    <div class="result" id="result"><p class="result-summary" aria-live="polite">Load an example or paste your own input.</p></div>
+  </section>
+</div>
+</main>
+<footer><a class="small-link" href="https://github.com/MusaBukhari237/saml-fixture-lab/blob/main/LICENSE">MIT license</a></footer>
+</body>
+</html>
